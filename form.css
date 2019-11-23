@@ -62,7 +62,8 @@ div.form label
 
 div.form .row
 {
-	margin: 5px 0;
+	margin-top: 5px;
+	margin-bottom: 5px;
 }
 
 
@@ -76,6 +77,7 @@ div.form .hint
 div.form .note
 {
 	font-style: italic;
+	margin-left: 12px;
 }
 
 div.form span.required
@@ -90,8 +92,9 @@ div.form span.translation
 }
 div.form table
 {
-    border-collapse:collapse;
-    width: 100%;
+	border-collapse:collapse;
+	width: 30%;
+	margin-left: 65px;
 }
 div.form table.grid td, div.form table.grid th
 {
