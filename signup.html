@@ -134,7 +134,7 @@
   <div class="pane-content">
     <div id="menu-wrapper"><div id="menu-top"><div class="menu-block-wrapper menu-block-2 menu-name-menu-division-menu parent-mlid-0 menu-level-1">
   <ul class="menu"><li class="first leaf has-children menu-mlid-784"><span title=""><a href="index.html">HOME</a></span></li>
-<li class="leaf has-children menu-mlid-785"><span title=""><a href="login.php">LOG IN</a></span></li>
+<li class="leaf has-children menu-mlid-785"><span title=""><a href="login.html">LOG IN</a></span></li>
 <li class="leaf has-children menu-mlid-786"><span title=""><a href="signup.html">SIGN UP</a></span></li>
 
 </ul></div>
@@ -169,9 +169,14 @@
         <input type="email" name="email" style="width:250px;>            </div>
     
     <div class="row wide"style="margin-left:40px">
-      &nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;   Mobile No<span class="required">&nbsp;</span>&nbsp;&nbsp; &nbsp;:
+      &nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;   Mobile No<span class="required">&nbsp;</span>&nbsp;&nbsp; &nbsp;:
                 <input name="stdmobile" id="Soldier_mobile_no1" type="tel" maxlength="11" onkeyup="validateForm()"style="width:250px;>            </div>
-    </br>
+    
+	
+    <div class="row wide"style="margin-left:40px">
+        Date of Birth &nbsp;&nbsp;:
+                <input type="date" name="dob" required="required"onkeyup="date()">            </div>
+	
 	<div class="row wide"style="margin-left:40px">
         Gender &nbsp; :
                 <select name="gender" id="Soldier_religion_id" required="required">
@@ -181,9 +186,6 @@
 <option value="Other">Others</option>
 </select>            </div>
 
-    <div class="row wide"style="margin-left:40px">
-        Date of Birth &nbsp;&nbsp;:
-                <input type="date" name="dob" required="required"onkeyup="date()">            </div>
 </fieldset>
 
 
