@@ -163,15 +163,27 @@
         Password <span class="required">*</span>&nbsp;&nbsp;&nbsp; :
                 <input type="text" name="pass"   onkeyup="validateForm()" required="required" style="width:250px;">
             </div>
-<div class="row wide">
+<div class="row wide"style="margin-left:40px">
         Email <span class="required"></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  :
                 
         <input type="email" name="email" style="width:250px;>            </div>
     
-    <div class="row wide">
+    <div class="row wide"style="margin-left:40px">
         Mobile No<span class="required">&nbsp;</span>:
                 <input name="stdmobile" id="Soldier_mobile_no1" type="tel" maxlength="11" onkeyup="validateForm()"style="width:250px;>            </div>
     
+	<div class="row wide"style="margin-left:40px">
+        Gender <span class="required">*</span>&nbsp; :
+                <select name="gender" id="Soldier_religion_id" required="required">
+<option value="">---Select Gender--–</option>
+<option value="Male">Male</option>
+<option value="Female">Female</option>
+<option value="Other">Others</option>
+</select>            </div>
+
+    <div class="row wide"style="margin-left:40px">
+        Date of Birth <span class="required">*</span>&nbsp;&nbsp;:
+                <input type="date" name="dob" required="required"onkeyup="date()">            </div>
 </fieldset>
 
 
@@ -224,18 +236,7 @@
         Father Name <span class="required">*</span> :
                 <input name="fname" id="Soldier_father_name" type="text" maxlength="34" required="required" onkeyup="validateForm()">            </div>
 
-    <div class="row wide">
-        Gender <span class="required">*</span>&nbsp; :
-                <select name="gender" id="Soldier_religion_id" required="required">
-<option value="">---Select Gender--–</option>
-<option value="Male">Male</option>
-<option value="Female">Female</option>
-<option value="Other">Others</option>
-</select>            </div>
-
-    <div class="row wide">
-        Date of Birth <span class="required">*</span>&nbsp;&nbsp;:
-                <input type="date" name="dob" required="required"onkeyup="date()">            </div>
+    
 
     <div class="row wide">
         CNIC No <span class="required">&nbsp;</span> :
