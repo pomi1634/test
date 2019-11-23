@@ -297,7 +297,57 @@ alert("Please Enter only Numaric in text");
         //alert(val);
     }
 </script>
+<form name="reg" action="adduser.php"  method="post" enctype="multipart/form-data">
+<div style="display:none"><input type="hidden" value="b0192bcc1312c7bb0836b18ec94864a14730f820" name="YII_CSRF_TOKEN"></div>
+<!--<div align="right">-->
+<!--    --><!--</div>-->
+<fieldset>
+    <legend>Personal Information</legend>
 
+    <div class="row wide">
+        Name   <span class="required">*</span> &nbsp;&nbsp;&nbsp;  : <input name="name" id="Soldier_name" type="text" maxlength="34"   onkeyup="validateForm()" required="required" />            </div>
+
+
+
+    <div class="row wide">
+        Password <span class="required">*</span>&nbsp;&nbsp;&nbsp; :
+                <input type="text" name="pass"   onkeyup="validateForm()" required="required">
+            </div>
+
+    
+    
+    
+</fieldset>
+
+
+
+
+<!--addl qual-->
+
+    
+    <div></div><br>
+    <br>
+    <div class="row" align="center">
+      <input class="btn btn-success" type="submit" name="submit" value="Submit">    <input  class="btn btn-success" type="reset" name="reset" value="Reset"></div>
+     <center>
+       <p>&nbsp;</p> 
+       
+       <span class="required">
+         <?php
+      if(isset($_GET['faculty']))echo "User Added Successfully";
+	  ?>
+         <?php
+      if(isset($_GET['faculty1']))echo" User name/Password already exists,Please try again....";
+			 
+	  ?>
+      </span>
+      
+     
+     </center>
+ 
+      
+     
+</form>
 
 <form name="reg" method="post" action="document.php" onSubmit="return validateForm()"  enctype="multipart/form-data">
 
