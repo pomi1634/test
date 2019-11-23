@@ -357,7 +357,7 @@
 </div>
 <div class="footer-right clearfix">
 <div class="row-one clearfix"><ul>
-									<li>	<a href="index.php"><font color="Green" size="30">Symfony 4.4 project</font></a></li>
+									
 										
 										<li>	<a href="login.php" target="_blank">Login</a></li>
 										<li>	<a href="signup.php">Signup</a></li>
