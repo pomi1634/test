@@ -206,7 +206,7 @@ alert("Please Enter only alphabets in text");
     <legend>Personal Information</legend>
 
     <div class="row wide">
-        Name   <span class="required">*</span> &nbsp;&nbsp;&nbsp;  : <input name="name" id="Soldier_name" type="text" maxlength="34"   onkeyup="validateForm()" required="required" />            </div>
+        User Name   <span class="required">*</span> &nbsp;&nbsp;&nbsp;  : <input name="name" id="Soldier_name" type="text" maxlength="34"   onkeyup="validateForm()" required="required" />            </div>
 
 
 
@@ -214,8 +214,25 @@ alert("Please Enter only alphabets in text");
         Password <span class="required">*</span>&nbsp;&nbsp;&nbsp; :
                 <input type="text" name="pass"   onkeyup="validateForm()" required="required">
             </div>
+	
+<div class="row wide">
+        Gender <span class="required">*</span>&nbsp; :
+                <select name="gender" id="Soldier_religion_id" required="required">
+<option value="">---Select Gender--–</option>
+<option value="Male">Male</option>
+<option value="Female">Female</option>
+<option value="Other">Others</option>
+</select>            </div>
 
-    
+    <div class="row wide">
+        Date of Birth <span class="required">*</span>&nbsp;&nbsp;:
+                <input type="date" name="dob" required="required"onkeyup="date()">            </div>
+   <div class="row wide">
+        Email <span class="required"></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  :
+                
+        <input type="email" name="email" >            </div>
+     
+
     
     
 </fieldset>
