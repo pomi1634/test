@@ -1,15 +1,3 @@
-﻿<?php require_once('../Connections/con1.php'); ?>
-<?php
-
-
-mysql_select_db($database_con1, $con1);
-$query_rs_faculty = "SELECT * FROM `admin`";
-$rs_faculty = mysql_query($query_rs_faculty, $con1) or die(mysql_error());
-$row_rs_faculty = mysql_fetch_assoc($rs_faculty);
-$totalRows_rs_faculty = mysql_num_rows($rs_faculty);
- session_start(); ?>
-<?php if(!isset($_SESSION['admin'])) { header("location: login.php?error=2"); exit(); }?>
-
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML+RDFa 1.0//EN"   "http://www.w3.org/MarkUp/DTD/xhtml-rdfa-1.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" version="XHTML+RDFa 1.0" dir="ltr">
 
@@ -346,6 +334,3 @@ alert("Please Enter only alphabets in text");
 </div></div>
 </div>  </body>
 </html>
-<?php
-mysql_free_result($rs_faculty);
-?>
